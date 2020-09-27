@@ -1,0 +1,29 @@
+img.avatar {
+  width: 130px;
+  border-radius: 50%;
+}
+.my-name {
+  font-size: 48px;
+  line-height: 1;
+}
+.my-title {
+  color: #236fb2;
+  font-size: 24px;
+  font-weight: 300;
+}
+.links {
+  display: flex;
+  margin: 10px 0 20px 0;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .link-item {
+    display: flex;
+    margin-right: 30px;
+    img {
+      margin-right: 6px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+$img-border-radius: 15px;
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 180px 190px 70px;
+  border-radius: $img-border-radius;
+  grid-template-areas:
+    'image'
+    'text'
+    'icons';
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+
+  .card-image {
+    grid-area: image;
+    background-size: cover;
+    border-top-left-radius: $img-border-radius;
+    border-top-right-radius: $img-border-radius;
+    &.e-clothing {
+      background-image: url('../../assets/img/e-clothing.jpg');
+    }
+    &.love-animal {
+      background-image: url('../../assets/img/love-animal.jpg');
+    }
+    &.hawaii-rent {
+      background-image: url('../../assets/img/hawaii-rent.jpg');
+    }
+    &.natours {
+      background-image: url('../../assets/img/Natours.jpg');
+    }
+    &.antai-resume {
+      background-image: url('../../assets/img/Antai-Resume.jpg');
+    }
+    &.taiwan-weather {
+      background-image: url('../../assets/img/Taiwan-Weather.jpg');
+    }
+    &.arc-development {
+      background-image: url('../../assets/img/arc-development.jpg');
+    }
+    &.social-media {
+      background-image: url('../../assets/img/social-media.jpg');
+    }
+  }
+  .card-text {
+    grid-area: text;
+    background-color: rgb(230, 230, 230);
+    padding: 15px;
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      color: rgb(80, 80, 80);
+      font-weight: 300;
+      font-size: 15px;
+    }
+  }
+  .card-icons {
+    grid-area: icons;
+    background-color: rgb(199, 201, 199);
+    border-bottom-left-radius: $img-border-radius;
+    border-bottom-right-radius: $img-border-radius;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 25px;
+    }
+  }
+}

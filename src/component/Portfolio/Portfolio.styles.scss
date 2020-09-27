@@ -1,0 +1,11 @@
+.portfolio {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px 0;
+
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 300px;
+  }
+}
