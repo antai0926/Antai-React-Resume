@@ -55,6 +55,22 @@ const Portfolio = () => {
       demoUrl: 'https://arc-antai-material-ui.netlify.app/',
       githubUrl: 'https://github.com/antai0926/CompanyWebsite-MaterialUI',
     },
+    {
+      imgClass: 'hawaii-rent',
+      title: '夏威夷旅遊服務',
+      description:
+        '此為靜態網頁，使用HTML及CSS Flex進行版面切版，利用Media Query、Flex Wrap進行RWD製作，搭配Javascript進行NavBar在不同位置(頂端與非頂端)之背景顏色改變。',
+      demoUrl: 'https://antai-frontend-hawaii.netlify.app/',
+      githubUrl: 'https://github.com/antai0926/Hawaii-Rent',
+    },
+    {
+      imgClass: 'antai-resume',
+      title: 'Antai Resume',
+      description:
+        '安泰個人的履歷網頁，使用HTML、CSS Flex and Grid進行切版，搭配Media Query進行RWD製作，Style部分使用SCSS進行撰寫。',
+      demoUrl: 'https://antai-resume.netlify.app/',
+      githubUrl: 'https://github.com/antai0926/Antai-Resume',
+    },
   ];
   return (
     <Section>
