@@ -8,6 +8,14 @@ import Card from '../Card/Card.component';
 const Portfolio = () => {
   const cards = [
     {
+      imgClass: 'utofun',
+      title: 'UTOFUN Practice',
+      description:
+        '以UTOFUN的網頁進行切版練習，不具商業用途。 使用HTML、SCSS、jQuery(DOM child append)、Media Query FlexBox (製作RWD)、Bootstrapt(AppBar、ResponsiveImage)。',
+      demoUrl: 'https://utofun-practice-antai.netlify.app/',
+      githubUrl: 'https://github.com/antai0926/UTOFUN-Practice',
+    },
+    {
       imgClass: 'taiwan-weather',
       title: 'Taiwan Weather',
       description:
