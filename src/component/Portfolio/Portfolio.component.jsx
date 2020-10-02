@@ -11,7 +11,7 @@ const Portfolio = () => {
       imgClass: 'utofun',
       title: 'UTOFUN Practice',
       description:
-        '以UTOFUN的網頁進行切版練習，不具商業用途。 使用HTML、SCSS、jQuery(DOM child append)、Media Query FlexBox (製作RWD)、Bootstrapt(AppBar、ResponsiveImage)。',
+        '以UTOFUN的網頁進行切版練習，不具商業用途。 使用HTML、SCSS、jQuery (DOM child append)、Media Query FlexBox (製作RWD)、Bootstrapt (AppBar、Responsive Image)。',
       demoUrl: 'https://utofun-practice-antai.netlify.app/',
       githubUrl: 'https://github.com/antai0926/UTOFUN-Practice',
     },
@@ -60,8 +60,8 @@ const Portfolio = () => {
       title: '動物認養平台',
       description:
         '此為靜態網頁，使用HTML、CSS Flex and Gird練習畫面切版，及使用Background Image、Sticky Nav Bar、Transition、Transition、Transform...等基礎技巧進行練習。',
-      demoUrl: 'https://arc-antai-material-ui.netlify.app/',
-      githubUrl: 'https://github.com/antai0926/CompanyWebsite-MaterialUI',
+      demoUrl: 'https://love-animals-antai.netlify.app/',
+      githubUrl: 'https://github.com/antai0926/love-animal-react',
     },
     {
       imgClass: 'hawaii-rent',
@@ -75,17 +75,18 @@ const Portfolio = () => {
       imgClass: 'antai-resume',
       title: 'Antai Resume',
       description:
-        '安泰個人的履歷網頁，使用HTML、CSS Flex and Grid進行切版，搭配Media Query進行RWD製作，Style部分使用SCSS進行撰寫。',
-      demoUrl: 'https://antai-resume.netlify.app/',
-      githubUrl: 'https://github.com/antai0926/Antai-Resume',
+        '安泰個人的履歷網頁，使用React，以CSS Flex and Grid進行切版，搭配Media Query進行RWD製作，Style部分使用SCSS進行撰寫。',
+      demoUrl: 'https://antai-react-resume.netlify.app/',
+      githubUrl: 'https://github.com/antai0926/Antai-React-Resume',
     },
   ];
   return (
     <Section>
       <SectionTitle>作品集</SectionTitle>
-      <div class="portfolio">
+      <div className="portfolio">
         {cards.map((card) => (
           <Card
+            key={card.title}
             imgClass={card.imgClass}
             title={card.title}
             description={card.description}

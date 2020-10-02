@@ -1,13 +1,11 @@
 import React from 'react';
 
 //Components
-import Section from '../Section/Section.component';
-import SectionTitle from '../SectionTitle/SectionTitle.component';
-import Job from '../Job/Job.component';
-import './Experience.styles.scss';
+import SectionList from '../SectionList/SectionList.component';
 
 const Experience = () => {
-  const jobs = [
+  const sectionTitle = '工作經歷';
+  const items = [
     {
       company: '廣晉軟體',
       title: 'Java Full Stack Developer',
@@ -97,27 +95,7 @@ const Experience = () => {
       ),
     },
   ];
-  return (
-    <Section>
-      <SectionTitle>工作經歷</SectionTitle>
-      <div className="jobs">
-        {jobs.map((job, i) => {
-          console.log(i, job, jobs.length - 1);
-          console.log(jobs.length - 1 === i);
-
-          return (
-            <Job
-              key={job.company}
-              company={job.company}
-              title={job.title}
-              period={job.period}
-              description={job.description}
-            />
-          );
-        })}
-      </div>
-    </Section>
-  );
+  return <SectionList sectionTitle={sectionTitle} items={items} />;
 };
 
 export default Experience;
